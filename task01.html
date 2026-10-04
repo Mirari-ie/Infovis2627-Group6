@@ -1,51 +1,64 @@
-
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Task 01 - Exploratory Data Analysis</title>
-
-    <style>
-        body {
-            font-family: Arial, Helvetica, sans-serif;
-            background-color: #ffffff;
-            margin: 0;
-            padding: 40px 20px;
-            text-align: center;
-        }
-
-        h1 {
-            font-family: Arial, Helvetica, sans-serif;
-            font-size: 36px;
-            font-weight: 600;
-            color: #333333;
-            margin-bottom: 30px;
-        }
-
-        .image-container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            width: 100%;
-        }
-
-        .image-container img {
-            width: 800px;
-            height: 450px;
-            display: block;
-        }
-    </style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Task 1</title>
+  <link rel="stylesheet" href="assets/student.css">
 </head>
-
 <body>
+  <main class="task-canvas" id="main-content">
+    <h1 class="visually-hidden" id="page-title">Task 1 visualisation</h1>
+    <div id="visualisation" role="region" aria-labelledby="page-title">
+      <p>In this assignment, we did an exploratory data analysis on the use of social media, and on how it
+        affects the dopamine levels and the productivity of the population. For that, we chose a dataset 
+        that contained all the data needed, and erased the columns that were not relevant for our purpose,
+        so that the data would be more manageable.</p>
 
-    <h1>Exploratory Data Analysis</h1>
-
-    <div class="image-container">
-        <img src="task01.png"
-             alt="Exploratory Data Analysis visualisation">
+      <p>To start with the analysis, we classified the data we kept, and saw that we could divide it in this
+        main groups:</p>
+        <ul>
+          <li>Demographical data: information about the age, age group, gender, education level or 
+            employment status.</li>
+          <li>Data concerning the social media use: the number of hours spent on average on social media, 
+            primary platforms, how much time people spend scrolling at night...</li>
+          <li>Data about the dopamine boost and the dependency related behaviour: the dopamine rush feel
+            score, the fomo score, the validation seeking score...</li>
+          <li>Data about productivity: the attention span, how many minutes the deep work of 
+            a person lasts...</li>
+          <li>Other potentially relevant variables: the average hours of sleep or the sleep quality.</li>
+        </ul>
+      <p>On the other hand, we made a second classification of the data, this time from the point of view
+        of data analysis:
+      </p>
+      <lu>
+        <li>Categorical data: there is categorical ordinal data (the age group and late night scrolling time),
+          as well as categorical nominal data (the gender, education level, employment status and primary 
+          platforms).</li>
+        <li>Numerical data: the age, the average daily hours in social media, the dopamine rush feel score,
+          the fomo score, the validation seeking score, the attention span and the deep work duration. 
+          In this case, all the numerical data that we have is discrete.</li>
+      </lu>
+      <p>Taking that into account, we made some graphics relating different variables, so that we could see 
+        if our phones and social media have affected our daily lives at all, and if so, which aspects are
+        the most influenced ones. 
+      </p>
+      <p>In general, we saw that there has been quite a big impact, and that it has been mainly negative,
+        at least regarding the variables that we analysed. The most remarkable ones are how strongly the
+        social media use decreases the attention span and that the more time people spend scrolling at night,
+        the worse is their sleep quality (the correlations can be seen in the graphics). 
+      </p>
+      <p>Finally, to summarize our findings, we made a heat map relating the average social media hours,
+        dopamine levels, fomo score, validation score, attention span, deep work and sleep quality (it can 
+        be seen in the image too). The heat map showed that the first four variables are highly correlated 
+        with each other, and that the negative correlation with the other three variables is equally strong.
+        So, overall, this shows that phones and social media have a negative impact on variables such as 
+        productivity and sleep quality, which could be analysed further in a more extensive study. 
+      </p>
+      <p>Lastly, we wanted to mention that the dataset has been created with artificial intelligence 
+        analysed and that all the data is invented.
+      </p>
     </div>
-
+  </main>
 </body>
 </html>
-```
