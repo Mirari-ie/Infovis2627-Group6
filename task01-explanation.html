@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Task 1 explanation</title>
+  <link rel="stylesheet" href="assets/student.css">
+</head>
+<body>
+  <main class="explanation-page" id="main-content">
+    <h1>Task 1 explanation</h1>
+    <div id="explanation-text">
+      <p>
+        In this task, we will be using a dataset containing information about accidents in Barcelona between 2019 and 2025.
+      </p>
+      <p>
+        Firstly, we classified the variables into three main groups:
+      </p>
+        <ul> 
+          <li><strong>Temporal data:</strong> the date and time of the accident.
+          </li> 
+          <li><strong>Geographical data:</strong> the district, neighbourhood and street where the accident happened.
+          </li> 
+          <li><strong>Accident-related data:</strong> the number of vehicles involved, the number of people injured or killed, 
+            the pedestrian-related cause, etc.
+          </li> 
+        </ul>
+        <p>This made it easier for us to identify some overlapping variables, such as <code>Descripcio_dia_setmana</code> and <code>
+          Dia_setmana</code>, <code>Mes_any</code> and <code>Nom_mes</code>, or <code>Hora_dia</code> and <code>Descripcio_torn</code>. 
+          It also helped us decide which relationships we wanted to explore.
+        </p>
+
+      <p>After determining the data type and subtype of each variable, we created some charts to investigate whether there is a specific 
+        time of day or day of the week when most accidents occur, and whether the district makes a difference in the number of accidents.
+      </p>
+
+      <p>To answer the first question, <em>“Is there a specific time of day when most accidents happen, and does this differ between 
+        weekdays and weekends?”</em>, we created a split violin showing the distribution of the number of accidents per hour, with weekdays 
+        and weekends represented using different colours. We observed that on weekdays, the number of accidents is higher during rush hours.
+        However, at weekends, there is a decrease in the number of accidents in the morning and an increase in accidents late at night,
+        compared to weekdays.
+      </p>
+
+      <p>To answer the second question, <em>“Is there a district where the majority of accidents happen?”</em>, we created a heat map 
+        representing the districts and the number of accidents that occurred in each of them. By displaying the data on a map of 
+        Barcelona, we can appreciate the different sizes of the districts and, therefore, better understand the distribution of accidents
+        across the city. Eixample stands out by far because, despite not being the largest district in terms of surface area, it has 
+        the highest number of recorded accidents (&gt;14,000). It is followed by Sarrià, Sant Martí and Sants-Montjuïc (between 6,000 and
+         8,000 accidents). At the other end, Ciutat Vella, Gràcia and Nou Barris have the lowest number of accidents (&lt;4,000).
+        </p>
+
+
+      <h3>Conclusion</h3>
+
+      <p>Overall, our analysis shows that the occurrence of accidents in Barcelona seems to be related to both time and location. We 
+        observed that the number of accidents varies depending on the day of the week and the time of day, with different patterns 
+        between weekdays and weekends. We also found significant differences between districts. However, the number of accidents in 
+        each district may also be influenced by many factors, such as population density, traffic volume, number of streets and vehicles 
+        in the area, etc. Therefore, these results help us identify some patterns in Barcelona's accidents, but there are still many factors
+         that we would need to take into account in order to reach a more complete conclusion.
+        </p>
