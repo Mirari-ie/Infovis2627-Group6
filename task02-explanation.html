@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <style>
+    :root {
+      --ink: #243047;
+      --muted: #63718a;
+      --line: #e2e8f0;
+      --header: #263b63;
+      --header-soft: #eef3fb;
+      --accent: #6685c4;
+      --surface: #ffffff;
+      --page: #f5f7fb;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      padding: 32px 20px;
+      background: var(--page);
+      color: var(--ink);
+      font-family: Inter, "Segoe UI", Roboto, Arial, sans-serif;
+    }
+
+    .table-card {
+      max-width: 1400px;
+      margin: 0 auto;
+      padding: 24px;
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      box-shadow: 0 12px 35px rgba(35, 54, 89, 0.08);
+    }
+
+    .table-heading {
+      margin: 0 0 6px;
+      font-size: clamp(1.25rem, 2.2vw, 1.8rem);
+      letter-spacing: -0.03em;
+    }
+
+    .table-subtitle {
+      margin: 0 0 22px;
+      color: var(--muted);
+      font-size: 0.95rem;
+      line-height: 1.5;
+    }
+
+    .table-scroll {
+      overflow-x: auto;
+      border: 1px solid var(--line);
+      border-radius: 12px;
+    }
+
+    table {
+      width: 100%;
+      min-width: 1050px;
+      border-collapse: separate;
+      border-spacing: 0;
+      table-layout: fixed;
+    }
+
+    th, td {
+      padding: 16px;
+      text-align: left;
+      vertical-align: top;
+      border-right: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
+      line-height: 1.5;
+      overflow-wrap: anywhere;
+    }
+
+    tr > *:last-child { border-right: 0; }
+    tbody tr:last-child > * { border-bottom: 0; }
+
+    thead th {
+      background: var(--header);
+      color: white;
+      font-size: 0.95rem;
+      font-weight: 700;
+      letter-spacing: 0.035em;
+    }
+
+    thead th span {
+      display: block;
+      margin-top: 4px;
+      color: #d9e4f8;
+      font-size: 0.75rem;
+      font-weight: 500;
+      letter-spacing: 0;
+      text-transform: uppercase;
+    }
+
+    tbody th {
+      width: 175px;
+      background: var(--header-soft);
+      color: var(--header);
+      font-size: 0.9rem;
+      font-weight: 700;
+    }
+
+    tbody td {
+      background: #fff;
+      color: #3d4960;
+      font-size: 0.92rem;
+    }
+
+    tbody tr:nth-child(even) td { background: #fafbfe; }
+
+    .placeholder {
+      display: inline-block;
+      color: #7b879b;
+      font-style: italic;
+    }
+
+    .section-label {
+      display: block;
+      margin-bottom: 5px;
+      color: var(--muted);
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.07em;
+      text-transform: uppercase;
+    }
+
+    @media (max-width: 700px) {
+      body { padding: 16px 10px; }
+      .table-card { padding: 16px; border-radius: 14px; }
+      th, td { padding: 12px; }
+    }
+  </style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Task 2 explanation</title>
+  <link rel="stylesheet" href="assets/student.css">
+</head>
+<body>
+  <main class="explanation-page" id="main-content">
+    <h1>Task 2 explanation</h1>
+    <div id="explanation-text">
+      <p>Our dashboard is destined to help an urban planning research group which is focused on accident prevention.
+        This group is integrated by a multidisciplinary team of researchers, including engineers, mathematicians,
+        physicists and social scientists who have an advanced knowledge in statistics and visualization.
+        The dashboard is intended to be used by the researchers on their desktop computers and the data should be updated
+        at least once a year but more frequently if any change proposed by the team has reccently been implemented in the city.
+        The main goal of the dashboard is to provide a visualization of the data in a way that helps the reasearchers identify 
+        patterns in the data and, if possible, find a raltion between those patterns and accident causality.
+      </p>
+      <div class="table-scroll" role="region" aria-label="Tabla de funciones; desplázate horizontalmente para ver todas las columnas" tabindex="0">
+      <table>
+        <thead>
+          <tr>
+            <th scope="col">Function <span></span></th>
+            <th scope="col">01 <span>Función</span></th>
+            <th scope="col">02 <span>Función</span></th>  
+            <th scope="col">03 <span>Función</span></th>
+            <th scope="col">04 <span>Función</span></th>
+            <th scope="col">05 <span>Función</span></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">Questions</th>
+            <td><span class="placeholder">Why do accidents occur?</span></td>
+            <td><span class="placeholder">Is the severity of the accident somehow related to its location, time, or other factors?</span></td>
+            <td><span class="placeholder">Is it possible to identify a group of streets where most accidents occur?</span></td>
+            <td><span class="placeholder">Is there a pattern in the timing of accidents?</span></td>
+            <td><span class="placeholder">Do the districts have different accident patterns and is there a general geographical trend?</span></td>
+          </tr>
+          <tr>
+            <th scope="row">How does it fit with the goal of the user?</th>
+            <td><span class="placeholder">Describe la relación con el objetivo…</span></td>
+            <td><span class="placeholder">Describe la relación con el objetivo…</span></td>
+            <td><span class="placeholder">Describe la relación con el objetivo…</span></td>
+            <td><span class="placeholder">Describe la relación con el objetivo…</span></td>
+            <td><span class="placeholder">Describe la relación con el objetivo…</span></td>
+          </tr>
+          <tr>
+            <th scope="row">Selected type of chart</th>
+            <td><span class="placeholder">Selecciona o escribe un tipo…</span></td>
+            <td><span class="placeholder">Selecciona o escribe un tipo…</span></td>
+            <td><span class="placeholder">Selecciona o escribe un tipo…</span></td>
+            <td><span class="placeholder">Selecciona o escribe un tipo…</span></td>
+            <td><span class="placeholder">Selecciona o escribe un tipo…</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    </div>
+  </main>
+</body>
+</html>
